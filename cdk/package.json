@@ -1,0 +1,37 @@
+{
+  "name": "cdk",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf cdk.out",
+    "clear": "yarn cdk context --clear",
+    "deploy": "yarn cdk deploy",
+    "destroy": "yarn cdk destroy",
+    "list": "yarn cdk list",
+    "synth": "yarn cdk synth"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "*",
+    "@aws-cdk/aws-dynamodb": "*",
+    "@aws-cdk/aws-events": "*",
+    "@aws-cdk/aws-events-targets": "*",
+    "@aws-cdk/aws-iam": "*",
+    "@aws-cdk/aws-lambda": "*",
+    "@aws-cdk/aws-lambda-event-sources": "*",
+    "@aws-cdk/aws-rds": "*",
+    "@aws-cdk/aws-route53": "*",
+    "@aws-cdk/aws-route53-targets": "*",
+    "@aws-cdk/aws-s3": "*",
+    "@aws-cdk/aws-secretsmanager": "*",
+    "@aws-cdk/core": "*",
+    "aws-sdk": "^2.624.0"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "*",
+    "@civilizeddev/eslint-config": "^0.0.1",
+    "@types/node": "^12",
+    "aws-cdk": "^1.25.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
+  }
+}
